@@ -22,5 +22,5 @@ Vajuta nuppu teosta et käivitada protseduur!!!
 <img width="826" height="582" alt="{FBBF8EC0-AE40-476F-A092-6095C7A51AEC}" src="https://github.com/user-attachments/assets/eb35afb2-20f9-406c-9e93-e3a3ecf054a0" />
 
 ## MIN ja MAX kaal
-<img width="699" height="571" alt="{2397D242-0CB2-425F-9EE4-342D9CE2E2C9}" src="https://github.com/user-attachments/assets/d33ba7c9-0d54-4f0a-a5a5-6a6566508d23" />
+<img width="698" height="739" alt="{EC367DE3-E089-4506-BD84-0C22641D1231}" src="https://github.com/user-attachments/assets/31e430dd-05a7-4141-aab5-baebbb4f2bce" />
 
