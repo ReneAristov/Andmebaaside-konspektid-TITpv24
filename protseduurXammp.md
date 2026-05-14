@@ -24,3 +24,7 @@ Vajuta nuppu teosta et käivitada protseduur!!!
 ## MIN ja MAX kaal
 <img width="698" height="739" alt="{EC367DE3-E089-4506-BD84-0C22641D1231}" src="https://github.com/user-attachments/assets/31e430dd-05a7-4141-aab5-baebbb4f2bce" />
 
+## LoomHinnang
+<img width="688" height="614" alt="{2F542A38-FCA6-4BF7-8597-A9EC1606270D}" src="https://github.com/user-attachments/assets/0658b52a-0816-4d03-8d33-fe73c2483568" />
+
+
