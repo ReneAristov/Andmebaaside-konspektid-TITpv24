@@ -193,9 +193,9 @@ SELECT * FROM Raamatud;
 ```
 
 
-## Kasutatud allikad
-1. [https://www.geeksforgeeks.org/dbms/difference-between-primary-key-and-foreign-key/ ](https://dev.mysql.com/doc/refman/8.0/en/create-table.html)
-2. [https://en.wikipedia.org/wiki/Unique_key](https://dev.mysql.com/doc/refman/8.0/en/create-table-constraints.html 
+## Allikad
+1. https://dev.mysql.com/doc/refman/8.0/en/create-table.html
+2. https://www.postgresql.org/docs/current/ddl-constraints.html
 3. https://www.theknowledgeacademy.com/blog/keys-in-sql/
 4. https://dba.stackexchange.com/questions/3134/in-sql-is-it-composite-or-compound-keys
 5. https://medium.com/@dewmithranaweera/different-types-of-database-keys-8ec93f5d3726
