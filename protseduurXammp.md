@@ -1,3 +1,6 @@
+
+
+[Põhimõisted](README.md) | [ProtseduuridSql](protsedur.md) | [ProtseduuridXAMPP](protseduurXammp.md) | [kasutajadSql](kasutajadsql.md) | [TrigerSql](trigger.md) | [TriggerXAMPP](trigerXampp.md) | [keys.md](keys.md) |
 ```sql
 CREATE TABLE Loomad(
     loomId int primary key AUTO_INCREMENT,
