@@ -1,3 +1,6 @@
+
+
+[Põhimõisted](README.md) | [ProtseduuridSql](protsedur.md) | [ProtseduuridXAMPP](protseduurXammp.md) | [kasutajadSql](kasutajadsql.md) | [TrigerSql](trigger.md) | [TriggerXAMPP](trigerXampp.md) | [keys.md](keys.md) |
 ## Trigger - triger - päästik
 - andmebaasi objekt, mis automaatselt käivitub tabeli sündmused (INSERT, UPDATE, DELETE).
 
