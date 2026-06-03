@@ -60,3 +60,87 @@ CONCAT('linn: ', inserted.linnanimi , ' rahvaarv: ', inserted.rahvaarv)  --andme
 FROM inserted;
 ```
 <img width="561" height="491" alt="{EE692E60-4441-4F30-83C9-CC1CE7DE8043}" src="https://github.com/user-attachments/assets/d086bcca-02c5-48ac-8ccf-bcc7bb2a202e" />
+
+
+```sql
+--delete trigger
+CREATE TRIGGER linnaKustutamine
+ON linnad --tabelinimi, mis on vaja jälgida
+FOR DELETE
+AS
+INSERT INTO logi(kasutaja, aeg, toiming, andmed)
+SELECT
+SYSTEM_USER,
+GETDATE(),  --aeg
+'on tehtud DELETE käsk',  --toiming
+CONCAT('linn: ', deleted.linnanimi , ' rahvaarv: ', deleted.rahvaarv)  --andmed
+FROM deleted;
+
+--kontroll--kustutada tabelist linnad
+DELETE FROM linnad WHERE linnID=1;
+select * from linnad;
+select * from logi;
+
+--Update triger
+CREATE TRIGGER linnaUuendamine
+ON linnad --tabelinimi, mis on vaja jälgida
+FOR UPDATE
+AS
+INSERT INTO logi(kasutaja, aeg, toiming, andmed)
+SELECT
+SYSTEM_USER,
+GETDATE(),  --aeg
+'on tehtud UPDATE käsk',  --toiming
+CONCAT('VANAD: linn: ', deleted.linnanimi , ' rahvaarv: ', deleted.rahvaarv,
+' ||| UUED: linn: ', inserted.linnanimi , ' rahvaarv: ', inserted.rahvaarv)  --andmed
+FROM deleted INNER JOIN inserted
+ON deleted.linnID=inserted.linnID;
+
+--kontrollimiseks tuleb uuendada tabeli linn
+UPDATE linnad SET linnanimi='Tallin-väike',rahvaarv=50 WHERE linnID=2;
+
+select * from linnad;
+select * from logi;
+
+DISABLE TRIGGER linnaLisamine on Linnad;
+DISABLE TRIGGER linnaKustutamine on Linnad;
+
+--kombineerimine insert ja delete trigger
+CREATE TRIGGER linnaLisaKustutamine
+ON linnad --tabelinimi, mis on vaja jälgida
+FOR DELETE, INSERT
+AS
+BEGIN
+INSERT INTO logi(kasutaja, aeg, toiming, andmed)
+SELECT
+SYSTEM_USER,
+GETDATE(),  --aeg
+'on tehtud DELETE käsk',  --toiming
+CONCAT('linn: ', deleted.linnanimi , ' rahvaarv: ', deleted.rahvaarv)  --andmed
+FROM deleted
+
+UNION ALL
+
+SELECT
+SYSTEM_USER,
+GETDATE(),  --aeg
+'on tehtud DELETE käsk',  --toiming
+CONCAT('linn: ', inserted.linnanimi , ' rahvaarv: ', inserted.rahvaarv)  --andmed
+FROM inserted;
+END;
+
+
+INSERT INTO linnad(linnanimi, rahvaarv)
+VALUES ('Tallinn', 650000);
+
+DELETE FROM linnad WHERE linnID=2;
+select * from linnad;
+select * from logi;
+--kasutaja sekretäärOpilane õigused - lisamine, kustutamine ja uuendamine tabelis linnad, ei näe tabeli logi ja see muuta trigerid
+--ei näe tabeli logi ja ei saa muuta reeglid
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON linnad TO sekretarRene
+DENY SELECT ON logi TO sekretarRene;
+
+DENY ALTER ANY DATABASE DDL TRIGGER TO sekretarRene;
+```
