@@ -1,6 +1,6 @@
 # Andmebaaside konspektid | Rene
 
-[Põhimõisted](README.md) | [Protseduurid]()
+[Põhimõisted](README.md) | [ProtseduuridSql](protsedur.md) | [ProtseduuridXAMPP](protseduurXammp.md) | [kasutajadSql](kasutajadsql.md) | [TrigerSql](trigger.md) | [TriggerXAMPP](trigerXampp.md) | [keys.md](keys.md) | 
 
 andmebaasidega seotud SQL ja konspektid
 ## Sisukord
