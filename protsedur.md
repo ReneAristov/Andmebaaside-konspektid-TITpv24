@@ -1,3 +1,6 @@
+
+
+[Põhimõisted](README.md) | [ProtseduuridSql](protsedur.md) | [ProtseduuridXAMPP](protseduurXammp.md) | [kasutajadSql](kasutajadsql.md) | [TrigerSql](trigger.md) | [TriggerXAMPP](trigerXampp.md) | [keys.md](keys.md) |
 ## SQL Protseduurid
 - store protcedure - salvestatud protseduurid - хранимые процедуры
 - sama nagu funktsioonid programmerimises - mingid tefevused mis käivitakse automaatselt protseduuri kasutamisel
