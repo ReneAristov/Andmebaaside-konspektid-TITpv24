@@ -1,6 +1,6 @@
 
 
-[Põhimõisted](README.md) | [ProtseduuridSql](protsedur.md) | [ProtseduuridXAMPP](protseduurXammp.md) | [kasutajadSql](kasutajadsql.md) | [TrigerSql](trigger.md) | [TriggerXAMPP](trigerXampp.md) | [keys.md](keys.md) | [Hotellaristov.sql](hotellaristov.sql) | [Hotelliruum.md](hotelliruum.md) | [Kusimused](kusimused.md) |
+[Põhimõisted](README.md) | [ProtseduuridSql](protsedur.md) | [ProtseduuridXAMPP](protseduurXammp.md) | [kasutajadSql](kasutajadsql.md) | [TrigerSql](trigger.md) | [TriggerXAMPP](trigerXampp.md) | [keys.md](keys.md) | [Hotelliruum.md](hotelliruum.md) | [Kusimused](kusimused.md) |
 ## Andmebass Hotelliruumi reserveerimine
 ```sql
 CREATE TABLE guest(
