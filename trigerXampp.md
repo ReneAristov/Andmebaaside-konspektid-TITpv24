@@ -1,6 +1,6 @@
 
 
-[Põhimõisted](README.md) | [ProtseduuridSql](protsedur.md) | [ProtseduuridXAMPP](protseduurXammp.md) | [kasutajadSql](kasutajadsql.md) | [TrigerSql](trigger.md) | [TriggerXAMPP](trigerXampp.md) | [keys.md](keys.md) |
+[Põhimõisted](README.md) | [ProtseduuridSql](protsedur.md) | [ProtseduuridXAMPP](protseduurXammp.md) | [kasutajadSql](kasutajadsql.md) | [TrigerSql](trigger.md) | [TriggerXAMPP](trigerXampp.md) | [keys.md](keys.md) | [Hotellaristov.sql](hotellaristov.sql) | [Hotelliruum.md](hotelliruum.md) | [Kusimused](kusimused.md) |
 ## Xampp päästikud
 <img width="725" height="380" alt="{4336F583-DA7F-4E6F-90EF-9531A7915C0C}" src="https://github.com/user-attachments/assets/9b7bcbbf-39e5-45c7-acc3-8007858026af" />
 
