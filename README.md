@@ -1,4 +1,7 @@
-# AndmebaasidTITpv24
+# Andmebaaside konspektid | Rene
+
+[Põhimõisted](README.md) | [Protseduurid]()
+
 andmebaasidega seotud SQL ja konspektid
 ## Sisukord
 - [Põhimõisted](#põhimõisted)
