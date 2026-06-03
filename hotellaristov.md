@@ -1,6 +1,8 @@
 
 
 [Põhimõisted](README.md) | [ProtseduuridSql](protsedur.md) | [ProtseduuridXAMPP](protseduurXammp.md) | [kasutajadSql](kasutajadsql.md) | [TrigerSql](trigger.md) | [TriggerXAMPP](trigerXampp.md) | [keys.md](keys.md) | [Hotellaristov.sql](hotellaristov.sql) | [Hotelliruum.md](hotelliruum.md) | [Kusimused](kusimused.md) |
+
+
 -- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
